@@ -39,9 +39,11 @@ reg.onsubmit = (e) => {
 show.onclick = () => {
     if (pass.type !== "text") {
         show.style.backgroundImage = `url("https://go.wepro.uz/_nuxt/img/monkey.ad68af6.png")`
+        show.style.width ="100px"
         pass.type = "text"
     } else {
         show.style.backgroundImage = `url("https://go.wepro.uz/_nuxt/img/monkey-closed.397bfe9.png")`
         pass.type = "password"
+        show.style.width ="30px"
     }
 }

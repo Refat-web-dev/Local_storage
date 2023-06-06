@@ -139,9 +139,10 @@ input {
     height: 30px;
     background-image: url("https://go.wepro.uz/_nuxt/img/monkey-closed.397bfe9.png");
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+    background-position: 50% 57%;
+    background-size: cover;
     transition: .5s ease;
+    border-radius: 100%;
 }
 
 button {
