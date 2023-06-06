@@ -272,7 +272,7 @@ function reloadTransactions(arr) {
         id.innerHTML = (Math.random() + 9999).toFixed(8).slice(5, 10)
         title.innerHTML = item.title
         category.innerHTML = item.category
-        amount.innerHTML = item.amount
+        amount.innerHTML = item.amount.toLocaleString("UZ-uz")
         date.innerHTML = item.date
 
         tr.append(id, title, category, amount, date)

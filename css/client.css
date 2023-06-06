@@ -137,7 +137,10 @@ nav {
   .transactions th,
   .transactions td {
     padding: 20px 0;
-    padding-right: 129px; }
+    padding-left: 162px; }
+    .transactions th:nth-child(1),
+    .transactions td:nth-child(1) {
+      padding-left: 0; }
   .transactions th {
     text-align: start;
     font-weight: 600;

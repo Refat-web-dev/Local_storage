@@ -166,7 +166,12 @@ nav {
     th,
     td {
         padding: 20px 0;
-        padding-right: 129px;
+
+        padding-left: 162px;
+
+        &:nth-child(1) {
+            padding-left: 0;
+        }
     }
 
     th {
