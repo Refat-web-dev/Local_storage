@@ -116,11 +116,12 @@ a {
 
 header {
     position: fixed;
-    top: 0;
+    top: 0px;
     left: 0;
     width: 100%;
     padding: 25px;
     background-color: #F0F0F0;
+    transition: .5s ease;
 }
 
 .container {
@@ -229,4 +230,13 @@ main {
         color: #0047FF;
     }
 
+}
+
+.hide {
+    min-width: 20px;
+    min-height: 20px;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    font-weight: 500;
 }
