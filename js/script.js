@@ -1,6 +1,8 @@
 let reg = document.forms.reg
 let inputs = reg.querySelectorAll('input')
 let btn = reg.querySelector('button')
+let show = reg.querySelector('.show')
+let pass = reg.querySelector('#pass')
 
 reg.onsubmit = (e) => {
 
@@ -10,7 +12,7 @@ reg.onsubmit = (e) => {
 
     inputs.forEach(inp => {
         inp.classList.remove("error")
-        
+
         if (inp.value.length === 0) {
             filled = false
             btn.style.backgroundColor = "red"
@@ -32,5 +34,14 @@ reg.onsubmit = (e) => {
 
         console.log(user);
         reg.reset()
+    }
+}
+show.onclick = () => {
+    if (pass.type !== "text") {
+        show.style.backgroundImage = `url("https://go.wepro.uz/_nuxt/img/monkey.ad68af6.png")`
+        pass.type = "text"
+    } else {
+        show.style.backgroundImage = `url("https://go.wepro.uz/_nuxt/img/monkey-closed.397bfe9.png")`
+        pass.type = "password"
     }
 }

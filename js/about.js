@@ -3,6 +3,7 @@ let inp = about.querySelector('input')
 let inputs = about.querySelectorAll('input')
 let pass = about.querySelector('#pass')
 let btn = about.querySelector('button')
+let show = about.querySelector('.show')
 
 let localedData = JSON.parse(localStorage.getItem("valid"))
 
@@ -46,5 +47,14 @@ about.onsubmit = (e) => {
         }
 
         console.log(user);
+    }
+}
+show.onclick = () => {
+    if (pass.type !== "text") {
+        show.style.backgroundImage = `url("https://go.wepro.uz/_nuxt/img/monkey.ad68af6.png")`
+        pass.type = "text"
+    } else {
+        show.style.backgroundImage = `url("https://go.wepro.uz/_nuxt/img/monkey-closed.397bfe9.png")`
+        pass.type = "password"
     }
 }

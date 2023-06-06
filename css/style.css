@@ -106,6 +106,22 @@ input {
   margin-bottom: 10px;
   transition: .3s ease; }
 
+.showParent {
+  position: relative; }
+
+.show {
+  cursor: pointer;
+  position: absolute;
+  top: 20%;
+  right: 5%;
+  width: 30px;
+  height: 30px;
+  background-image: url("https://go.wepro.uz/_nuxt/img/monkey-closed.397bfe9.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transition: .5s ease; }
+
 button {
   width: 438px;
   height: 56px;
